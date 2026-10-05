@@ -1,58 +1,38 @@
 {
-  "SchemaVersion": "1.0",
-  "Type": "ConditionalAccess",
-  "Metadata": {
-    "DisplayName": "POL-002 - Block Non-US Access",
-    "Description": "Geofencing policy to block inbound connection requests originating from locations outside allowed regional zones, featuring dynamic asset allocation.",
-    "Author": "CIPP Automated Library"
-  },
-  "Policy": {
-    "displayName": "POL-002 - Block Non-US Access",
-    "state": "enabledForReportingButNotEnforced",
-    "conditions": {
-      "userRiskLevels": [],
-      "signInRiskLevels": [],
-      "clientAppTypes": [
-        "exchangeActiveSync",
-        "browser",
-        "mobileAppsAndDesktopClients",
-        "other"
-      ],
-      "applications": {
-        "includeApplications": [
-          "All"
-        ],
-        "excludeApplications": [],
-        "includeUserActions": [],
-        "includeAuthenticationContextClassReferences": []
-      },
-      "users": {
-        "includeUsers": [
-          "All"
-        ],
-        "excludeUsers": [],
-        "includeGroups": [],
-        "excludeGroups": [
-          "%%EXCLUDE_GROUP%%"
-        ],
-        "includeRoles": [],
-        "excludeRoles": []
-      },
-      "locations": {
-        "includeLocations": [
-          "All"
-        ],
-        "excludeLocations": [
-          "%%NAMED_LOCATION_1%%",
-          "%%NAMED_LOCATION_2%%"
-        ]
-      }
+  "displayName": "POL-002 - Block Non-US Access",
+  "state": "disabled",
+  "conditions": {
+    "clientAppTypes": [
+      "exchangeActiveSync",
+      "browser",
+      "mobileAppsAndDesktopClients",
+      "other"
+    ],
+    "applications": {
+      "includeApplications": [
+        "All"
+      ]
     },
-    "grantControls": {
-      "operator": "OR",
-      "builtInControls": [
-        "block"
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeGroups": [
+        "00000000-0000-0000-0000-000000000000"
+      ]
+    },
+    "locations": {
+      "includeLocations": [
+        "All"
+      ],
+      "excludeLocations": [
+        "AllTrusted"
       ]
     }
+  },
+  "grantControls": {
+    "builtInControls": [
+      "block"
+    ]
   }
 }
