@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/KelvinTegelaar/CIPP/main/src/data/standards.json",
   "SchemaVersion": "1.0",
   "Type": "ConditionalAccess",
   "Metadata": {
