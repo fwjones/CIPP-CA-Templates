@@ -4,7 +4,7 @@
   "Metadata": {
     "DisplayName": "POL-103 - Require MFA for Admins Accessing Admin Portals",
     "Description": "Enforces a phishing-resistant authentication strength whenever designated administrative groups attempt to access Microsoft Admin Portals.",
-    "Author": "CIPP Automated Library"
+    "Author": "Wayne Jones"
   },
   "Policy": {
     "displayName": "POL-103 - Require MFA for Admins Accessing Admin Portals",

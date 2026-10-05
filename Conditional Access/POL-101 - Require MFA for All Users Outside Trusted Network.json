@@ -4,7 +4,7 @@
   "Metadata": {
     "DisplayName": "POL-101 - Require MFA for All Users Outside Trusted Network",
     "Description": "Enforces Multi-Factor Authentication for connection requests originating from untrusted locations outside specified tenant boundaries.",
-    "Author": "CIPP Automated Library"
+    "Author": "Wayne Jones"
   },
   "Policy": {
     "displayName": "POL-101 - Require MFA for All Users Outside Trusted Network",

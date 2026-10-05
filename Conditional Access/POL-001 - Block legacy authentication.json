@@ -4,7 +4,7 @@
   "Metadata": {
     "DisplayName": "POL-001 - Block legacy authentication",
     "Description": "Policy to block legacy authentication protocols exported from Entra, featuring dynamic asset allocation.",
-    "Author": "Your Name/Organization"
+    "Author": "Wayne Jones"
   },
   "Policy": {
     "displayName": "POL-001 - Block legacy authentication",
