@@ -1,14 +1,21 @@
 {
-  "SchemaVersion": "1.0",
+  "SchemaVersion": "2.0",
   "Type": "ConditionalAccess",
   "Metadata": {
     "DisplayName": "POL-001 - Block legacy authentication",
-    "Description": "Policy to block legacy authentication protocols exported from Entra, featuring dynamic asset allocation.",
-    "Author": "Wayne Jones"
+    "Description": "Baseline standard policy to block legacy authentication protocols across all tenants, managed via CIPP.",
+    "Author": "Wayne Jones",
+    "cat": "Entra Standards",
+    "tag": [
+      "CIS M365",
+      "Baseline"
+    ],
+    "impact": "High Impact",
+    "impactColour": "danger"
   },
   "Policy": {
     "displayName": "POL-001 - Block legacy authentication",
-    "state": "enabled",
+    "state": "reportOnly",
     "conditions": {
       "userRiskLevels": [],
       "signInRiskLevels": [],
@@ -28,10 +35,12 @@
         "includeUsers": [
           "All"
         ],
-        "excludeUsers": [],
+        "excludeUsers": [
+          "CIPP Service Account"
+        ],
         "includeGroups": [],
         "excludeGroups": [
-          "%%EXCLUDE_GROUP%%"
+          "SG-CA-BreakGlass"
         ],
         "includeRoles": [],
         "excludeRoles": []
