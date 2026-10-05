@@ -1,0 +1,52 @@
+{
+  "SchemaVersion": "1.0",
+  "Type": "ConditionalAccess",
+  "Metadata": {
+    "DisplayName": "POL-201 - Managed Mobile Devices for Employees",
+    "Description": "Policy enforcing access rules specifically for mobile device platforms targeting core Office 365 services.",
+    "Author": "CIPP Automated Library"
+  },
+  "Policy": {
+    "displayName": "POL-201 - Managed Mobile Devices for Employees",
+    "state": "enabledForReportingButNotEnforced",
+    "conditions": {
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "includeApplications": [
+          "Office365"
+        ],
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "users": {
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "includeGroups": [],
+        "excludeGroups": [
+          "%%EXCLUDE_GROUP%%"
+        ],
+        "includeRoles": [],
+        "excludeRoles": []
+      },
+      "platforms": {
+        "includePlatforms": [
+          "android",
+          "iOS",
+          "windowsPhone"
+        ],
+        "excludePlatforms": []
+      }
+    },
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "mfa"
+      ]
+    }
+  }
+}

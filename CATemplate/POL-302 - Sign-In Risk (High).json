@@ -1,0 +1,47 @@
+{
+  "SchemaVersion": "1.0",
+  "Type": "ConditionalAccess",
+  "Metadata": {
+    "DisplayName": "POL-302 - Sign-In Risk (High)",
+    "Description": "Blocks access completely if Entra Identity Protection flags an active authentication attempt as a high risk event.",
+    "Author": "Your Name/Organization"
+  },
+  "Policy": {
+    "displayName": "POL-302 - Sign-In Risk (High)",
+    "state": "enabledForReportingButNotEnforced",
+    "conditions": {
+      "signInRiskLevels": [
+        "high"
+      ],
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "includeApplications": [
+          "All"
+        ],
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "users": {
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "includeGroups": [],
+        "excludeGroups": [
+          "%%EXCLUDE_GROUP%%"
+        ],
+        "includeRoles": [],
+        "excludeRoles": []
+      }
+    },
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ]
+    }
+  }
+}

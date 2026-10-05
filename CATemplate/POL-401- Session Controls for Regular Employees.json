@@ -1,0 +1,48 @@
+{
+  "SchemaVersion": "1.0",
+  "Type": "ConditionalAccess",
+  "Metadata": {
+    "DisplayName": "POL-401 - Session Controls for Regular Employees",
+    "Description": "Enforces a mandatory 1-day sign-in frequency session control for regular employee access across all cloud applications.",
+    "Author": "Your Name/Organization"
+  },
+  "Policy": {
+    "displayName": "POL-401 - Session Controls for Regular Employees",
+    "state": "enabledForReportingButNotEnforced",
+    "conditions": {
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "includeApplications": [
+          "All"
+        ],
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "users": {
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "includeGroups": [],
+        "excludeGroups": [
+          "%%EXCLUDE_GROUP_1%%",
+          "%%EXCLUDE_GROUP_2%%"
+        ],
+        "includeRoles": [],
+        "excludeRoles": []
+      }
+    },
+    "sessionControls": {
+      "signInFrequency": {
+        "value": 1,
+        "type": "days",
+        "authenticationType": "primaryAndSecondaryAuthentication",
+        "frequencyInterval": "timeBased",
+        "isEnabled": true
+      }
+    }
+  }
+}

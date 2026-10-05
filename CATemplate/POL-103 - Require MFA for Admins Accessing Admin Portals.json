@@ -1,0 +1,59 @@
+{
+  "SchemaVersion": "1.0",
+  "Type": "ConditionalAccess",
+  "Metadata": {
+    "DisplayName": "POL-103 - Require MFA for Admins Accessing Admin Portals",
+    "Description": "Enforces a phishing-resistant authentication strength whenever designated administrative groups attempt to access Microsoft Admin Portals.",
+    "Author": "Wayne Jones"
+  },
+  "Policy": {
+    "displayName": "POL-103 - Require MFA for Admins Accessing Admin Portals",
+    "state": "enabledForReportingButNotEnforced",
+    "conditions": {
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "includeApplications": [
+          "MicrosoftAdminPortals"
+        ],
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "users": {
+        "includeUsers": [],
+        "excludeUsers": [],
+        "includeGroups": [
+          "%%ADMIN_ASSIGNMENT_GROUP%%"
+        ],
+        "excludeGroups": [
+          "%%EXCLUDE_GROUP%%"
+        ],
+        "includeRoles": [],
+        "excludeRoles": []
+      },
+      "platforms": {
+        "includePlatforms": [
+          "all"
+        ],
+        "excludePlatforms": []
+      },
+      "locations": {
+        "includeLocations": [
+          "All"
+        ],
+        "excludeLocations": []
+      }
+    },
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [],
+      "customAuthenticationFactors": [],
+      "termsOfUse": [],
+      "authenticationStrength": {
+        "id": "00000000-0000-0000-0000-000000000004"
+      }
+    }
+  }
+}

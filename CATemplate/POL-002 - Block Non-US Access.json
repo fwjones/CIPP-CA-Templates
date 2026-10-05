@@ -1,0 +1,58 @@
+{
+  "SchemaVersion": "1.0",
+  "Type": "ConditionalAccess",
+  "Metadata": {
+    "DisplayName": "POL-002 - Block Non-US Access",
+    "Description": "Geofencing policy to block inbound connection requests originating from locations outside allowed regional zones, featuring dynamic asset allocation.",
+    "Author": "CIPP Automated Library"
+  },
+  "Policy": {
+    "displayName": "POL-002 - Block Non-US Access",
+    "state": "enabledForReportingButNotEnforced",
+    "conditions": {
+      "userRiskLevels": [],
+      "signInRiskLevels": [],
+      "clientAppTypes": [
+        "exchangeActiveSync",
+        "browser",
+        "mobileAppsAndDesktopClients",
+        "other"
+      ],
+      "applications": {
+        "includeApplications": [
+          "All"
+        ],
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "users": {
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "includeGroups": [],
+        "excludeGroups": [
+          "%%EXCLUDE_GROUP%%"
+        ],
+        "includeRoles": [],
+        "excludeRoles": []
+      },
+      "locations": {
+        "includeLocations": [
+          "All"
+        ],
+        "excludeLocations": [
+          "%%NAMED_LOCATION_1%%",
+          "%%NAMED_LOCATION_2%%"
+        ]
+      }
+    },
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ]
+    }
+  }
+}

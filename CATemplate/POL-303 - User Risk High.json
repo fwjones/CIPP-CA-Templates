@@ -1,0 +1,48 @@
+{
+  "SchemaVersion": "1.0",
+  "Type": "ConditionalAccess",
+  "Metadata": {
+    "DisplayName": "POL-303 - User Risk High",
+    "Description": "Enforces Multi-Factor Authentication and a mandatory password change when Entra Identity Protection flags a user identity as high risk.",
+    "Author": "Your Name/Organization"
+  },
+  "Policy": {
+    "displayName": "POL-303 - User Risk High",
+    "state": "enabledForReportingButNotEnforced",
+    "conditions": {
+      "userRiskLevels": [
+        "high"
+      ],
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "includeApplications": [
+          "All"
+        ],
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "users": {
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "includeGroups": [],
+        "excludeGroups": [
+          "%%EXCLUDE_GROUP%%"
+        ],
+        "includeRoles": [],
+        "excludeRoles": []
+      }
+    },
+    "grantControls": {
+      "operator": "AND",
+      "builtInControls": [
+        "mfa",
+        "passwordChange"
+      ]
+    }
+  }
+}

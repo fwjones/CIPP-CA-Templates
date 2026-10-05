@@ -1,7 +1,0 @@
-{
-  "PartitionKey": "CATemplate",
-  "RowKey": "c5c63786-8ea4-428d-8d49-c2bfd5278882",
-  "GUID": "c5c63786-8ea4-428d-8d49-c2bfd5278882",
-  "JSON": "{\"displayName\":\"POL-001 - Block Legacy Authentication\",\"state\":\"enabledForReportingButNotEnforced\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"]},\"applications\":{\"includeApplications\":[\"All\"]},\"clientAppTypes\":[\"exchangeActiveSync\",\"other\"]},\"grantControls\":{\"operator\":\"AND\",\"builtInControls\":[\"block\"]}}",
-  "SHA": ""
-}
