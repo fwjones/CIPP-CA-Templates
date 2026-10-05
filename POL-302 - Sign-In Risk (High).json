@@ -1,1 +1,47 @@
-{"@odata.context":"https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity","id":"8d0b2082-fc20-4849-9218-a6787bab1911","templateId":null,"displayName":"POL-302 - Sign-In Risk (High)","createdDateTime":"2026-06-25T14:23:54.3768161Z","modifiedDateTime":null,"state":"enabledForReportingButNotEnforced","deletedDateTime":null,"partialEnablementStrategy":null,"sessionControls":null,"conditions":{"userRiskLevels":[],"signInRiskLevels":["high"],"clientAppTypes":["all"],"platforms":null,"locations":null,"times":null,"deviceStates":null,"devices":null,"clientApplications":null,"agents":null,"applications":{"includeApplications":["All"],"excludeApplications":[],"includeUserActions":[],"includeAuthenticationContextClassReferences":[],"applicationFilter":null},"users":{"includeUsers":["All"],"excludeUsers":[],"includeGroups":[],"excludeGroups":["6a157d7b-bb84-4f50-88bd-67ab0ccf2f3a"],"includeRoles":[],"excludeRoles":[],"includeGuestsOrExternalUsers":null,"excludeGuestsOrExternalUsers":null}},"grantControls":{"operator":"OR","builtInControls":["block"],"customAuthenticationFactors":[],"termsOfUse":[],"authenticationStrength@odata.context":"https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('8d0b2082-fc20-4849-9218-a6787bab1911')/grantControls/authenticationStrength/$entity","authenticationStrength":null}}
+{
+  "SchemaVersion": "1.0",
+  "Type": "ConditionalAccess",
+  "Metadata": {
+    "DisplayName": "POL-302 - Sign-In Risk (High)",
+    "Description": "Blocks access completely if Entra Identity Protection flags an active authentication attempt as a high risk event.",
+    "Author": "Your Name/Organization"
+  },
+  "Policy": {
+    "displayName": "POL-302 - Sign-In Risk (High)",
+    "state": "enabledForReportingButNotEnforced",
+    "conditions": {
+      "signInRiskLevels": [
+        "high"
+      ],
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "includeApplications": [
+          "All"
+        ],
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "users": {
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "includeGroups": [],
+        "excludeGroups": [
+          "%%EXCLUDE_GROUP%%"
+        ],
+        "includeRoles": [],
+        "excludeRoles": []
+      }
+    },
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "block"
+      ]
+    }
+  }
+}

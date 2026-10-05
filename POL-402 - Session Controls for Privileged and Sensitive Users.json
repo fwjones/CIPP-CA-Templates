@@ -1,1 +1,47 @@
-{"@odata.context":"https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity","id":"9b52c8d5-c431-4c03-93fb-a51d96c8df99","templateId":null,"displayName":"POL-402 - Session Controls for Privileged and Sensitive Users","createdDateTime":"2026-06-25T15:17:47.8589869Z","modifiedDateTime":null,"state":"enabledForReportingButNotEnforced","deletedDateTime":null,"grantControls":null,"partialEnablementStrategy":null,"conditions":{"userRiskLevels":[],"signInRiskLevels":[],"clientAppTypes":["all"],"platforms":null,"locations":null,"times":null,"deviceStates":null,"devices":null,"clientApplications":null,"agents":null,"applications":{"includeApplications":["All"],"excludeApplications":[],"includeUserActions":[],"includeAuthenticationContextClassReferences":[],"applicationFilter":null},"users":{"includeUsers":[],"excludeUsers":[],"includeGroups":["bb01ef6e-1bb1-4510-b220-adae9b296ba4","cf3a1537-02a1-4f8f-ae68-dac215322515"],"excludeGroups":[],"includeRoles":[],"excludeRoles":[],"includeGuestsOrExternalUsers":null,"excludeGuestsOrExternalUsers":null}},"sessionControls":{"disableResilienceDefaults":true,"applicationEnforcedRestrictions":null,"cloudAppSecurity":null,"persistentBrowser":null,"continuousAccessEvaluation":null,"secureSignInSession":null,"blockSensitiveActions":null,"signInFrequency":{"value":8,"type":"hours","authenticationType":"primaryAndSecondaryAuthentication","frequencyInterval":"timeBased","isEnabled":true}}}
+{
+  "SchemaVersion": "1.0",
+  "Type": "ConditionalAccess",
+  "Metadata": {
+    "DisplayName": "POL-402 - Session Controls for Privileged and Sensitive Users",
+    "Description": "Enforces an 8-hour sign-in frequency and disables resilience defaults for high-privilege or sensitive account scopes.",
+    "Author": "Your Name/Organization"
+  },
+  "Policy": {
+    "displayName": "POL-402 - Session Controls for Privileged and Sensitive Users",
+    "state": "enabledForReportingButNotEnforced",
+    "conditions": {
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "includeApplications": [
+          "All"
+        ],
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "users": {
+        "includeUsers": [],
+        "excludeUsers": [],
+        "includeGroups": [
+          "%%PRIVILEGED_USER_GROUP_1%%",
+          "%%PRIVILEGED_USER_GROUP_2%%"
+        ],
+        "excludeGroups": [],
+        "includeRoles": [],
+        "excludeRoles": []
+      }
+    },
+    "sessionControls": {
+      "disableResilienceDefaults": true,
+      "signInFrequency": {
+        "value": 8,
+        "type": "hours",
+        "authenticationType": "primaryAndSecondaryAuthentication",
+        "frequencyInterval": "timeBased",
+        "isEnabled": true
+      }
+    }
+  }
+}

@@ -1,1 +1,55 @@
-{"@odata.context":"https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity","id":"70610da4-52e3-4a75-aad2-12502ee82f2f","templateId":null,"displayName":"POL-101 - Require MFA for All Users Outside Trusted Network","createdDateTime":"2026-06-25T14:08:43.0295014Z","modifiedDateTime":"2026-06-25T14:10:08.2569997Z","state":"enabledForReportingButNotEnforced","deletedDateTime":null,"partialEnablementStrategy":null,"sessionControls":null,"conditions":{"userRiskLevels":[],"signInRiskLevels":[],"clientAppTypes":["all"],"platforms":null,"times":null,"deviceStates":null,"devices":null,"clientApplications":null,"agents":null,"applications":{"includeApplications":["All"],"excludeApplications":[],"includeUserActions":[],"includeAuthenticationContextClassReferences":[],"applicationFilter":null},"users":{"includeUsers":["All"],"excludeUsers":[],"includeGroups":[],"excludeGroups":["6a157d7b-bb84-4f50-88bd-67ab0ccf2f3a","c97864fb-e415-4d80-9153-052cb6c4e991"],"includeRoles":[],"excludeRoles":[],"includeGuestsOrExternalUsers":null,"excludeGuestsOrExternalUsers":null},"locations":{"includeLocations":["All"],"excludeLocations":["0be427a0-9e51-4011-9bf5-ccf2c3b5ceea"]}},"grantControls":{"operator":"OR","builtInControls":["mfa"],"customAuthenticationFactors":[],"termsOfUse":[],"authenticationStrength@odata.context":"https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('70610da4-52e3-4a75-aad2-12502ee82f2f')/grantControls/authenticationStrength/$entity","authenticationStrength":null}}
+{
+  "SchemaVersion": "1.0",
+  "Type": "ConditionalAccess",
+  "Metadata": {
+    "DisplayName": "POL-101 - Require MFA for All Users Outside Trusted Network",
+    "Description": "Enforces Multi-Factor Authentication for connection requests originating from untrusted locations outside specified tenant boundaries.",
+    "Author": "CIPP Automated Library"
+  },
+  "Policy": {
+    "displayName": "POL-101 - Require MFA for All Users Outside Trusted Network",
+    "state": "enabledForReportingButNotEnforced",
+    "conditions": {
+      "userRiskLevels": [],
+      "signInRiskLevels": [],
+      "clientAppTypes": [
+        "all"
+      ],
+      "applications": {
+        "includeApplications": [
+          "All"
+        ],
+        "excludeApplications": [],
+        "includeUserActions": [],
+        "includeAuthenticationContextClassReferences": []
+      },
+      "users": {
+        "includeUsers": [
+          "All"
+        ],
+        "excludeUsers": [],
+        "includeGroups": [],
+        "excludeGroups": [
+          "%%EXCLUDE_GROUP_1%%",
+          "%%EXCLUDE_GROUP_2%%"
+        ],
+        "includeRoles": [],
+        "excludeRoles": []
+      },
+      "locations": {
+        "includeLocations": [
+          "All"
+        ],
+        "excludeLocations": [
+          "%%TRUSTED_NAMED_LOCATION%%"
+        ]
+      }
+    },
+    "grantControls": {
+      "operator": "OR",
+      "builtInControls": [
+        "mfa"
+      ]
+    }
+  }
+}
