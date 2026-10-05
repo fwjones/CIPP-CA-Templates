@@ -16,13 +16,21 @@
       "exchangeActiveSync",
       "other"
     ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
     "applications": {
       "includeApplications": [
         "All"
       ],
       "excludeApplications": [],
       "includeUserActions": [],
-      "includeAuthenticationContextClassReferences": []
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
     },
     "users": {
       "includeUsers": [
@@ -34,7 +42,9 @@
 
       ],
       "includeRoles": [],
-      "excludeRoles": []
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
     }
   },
   "grantControls": {
