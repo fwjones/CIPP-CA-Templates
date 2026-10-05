@@ -2,7 +2,7 @@
   "SchemaVersion": "1.0",
   "Type": "ConditionalAccess",
   "Metadata": {
-    "DisplayName": "POL-001 - Block legacy authentication",
+    "DisplayName": "POL-001 - Block legacy authentication - v1.1",
     "Description": "Block All legacy authentication",
     "Author": "Wayne Jones"
   },
