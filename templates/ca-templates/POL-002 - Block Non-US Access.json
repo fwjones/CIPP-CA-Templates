@@ -8,7 +8,7 @@
   },
   "Policy": {
   "displayName": "POL-001 - Block legacy authentication",
-  "state": "enabled",
+  "state": "enabledForReportingButNotEnforced",
   "conditions": {
     "userRiskLevels": [],
     "signInRiskLevels": [],
