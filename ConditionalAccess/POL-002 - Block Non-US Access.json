@@ -1,0 +1,38 @@
+{
+  "displayName": "POL-002 - Block Non-US Access",
+  "state": "disabled",
+  "conditions": {
+    "clientAppTypes": [
+      "exchangeActiveSync",
+      "browser",
+      "mobileAppsAndDesktopClients",
+      "other"
+    ],
+    "applications": {
+      "includeApplications": [
+        "All"
+      ]
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeGroups": [
+        "00000000-0000-0000-0000-000000000000"
+      ]
+    },
+    "locations": {
+      "includeLocations": [
+        "All"
+      ],
+      "excludeLocations": [
+        "AllTrusted"
+      ]
+    }
+  },
+  "grantControls": {
+    "builtInControls": [
+      "block"
+    ]
+  }
+}
