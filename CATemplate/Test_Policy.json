@@ -1,6 +1,0 @@
-{
-  "PartitionKey": "CATemplate",
-  "RowKey": "cc834372-f85b-4329-a718-559c03aaf7c2",
-  "GUID": "cc834372-f85b-4329-a718-559c03aaf7c2",
-  "JSON": "{\"state\":\"enabledForReportingButNotEnforced\",\"displayName\":\"Test Policy\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"],\"excludeGroups\":[\"SG-CA-BreakGlass\"]},\"applications\":{\"includeApplications\":[\"MicrosoftAdminPortals\"]},\"clientAppTypes\":[\"all\"],\"locations\":{\"includeLocations\":[\"AllTrusted\"]}},\"grantControls\":{\"operator\":\"AND\",\"builtInControls\":[\"mfa\"]}}"
-}
