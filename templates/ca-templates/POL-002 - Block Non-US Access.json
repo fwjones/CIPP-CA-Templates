@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/KelvinTegelaar/CIPP/main/src/data/standards.json",
   "SchemaVersion": "1.0",
   "Type": "ConditionalAccess",
   "Metadata": {
@@ -11,8 +10,6 @@
   "displayName": "POL-001 - Block legacy authentication",
   "state": "enabledForReportingButNotEnforced",
   "conditions": {
-    "userRiskLevels": [],
-    "signInRiskLevels": [],
     "clientAppTypes": [
       "exchangeActiveSync",
       "other"
@@ -20,22 +17,12 @@
     "applications": {
       "includeApplications": [
         "All"
-      ],
-      "excludeApplications": [],
-      "includeUserActions": [],
-      "includeAuthenticationContextClassReferences": []
+      ]
     },
     "users": {
       "includeUsers": [
         "All"
-      ],
-      "excludeUsers": [],
-      "includeGroups": [],
-      "excludeGroups": [
-
-      ],
-      "includeRoles": [],
-      "excludeRoles": []
+      ]
     }
   },
   "grantControls": {
