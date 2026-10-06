@@ -1,12 +1,4 @@
 {
-  "SchemaVersion": "1.0",
-  "Type": "ConditionalAccess",
-  "Metadata": {
-    "DisplayName": "POL-001 - Block legacy authentication - v1.1",
-    "Description": "Block All legacy authentication",
-    "Author": "Wayne Jones"
-  },
-  "Policy": {
   "displayName": "POL-001 - Block legacy authentication",
   "state": "enabledForReportingButNotEnforced",
   "conditions": {
@@ -17,12 +9,20 @@
     "applications": {
       "includeApplications": [
         "All"
-      ]
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": []
     },
     "users": {
       "includeUsers": [
         "All"
-      ]
+      ],
+      "excludeUsers": ["SG-CA-BreakGlass"],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": []
     }
   },
   "grantControls": {
@@ -31,7 +31,5 @@
       "block"
     ]
   }
-  }
 }
-
 
