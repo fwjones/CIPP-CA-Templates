@@ -1,0 +1,7 @@
+{
+  "PartitionKey": "CATemplate",
+  "RowKey": "08a8079c-c2ff-43bd-99f7-b7f0293c63c2",
+  "GUID": "08a8079c-c2ff-43bd-99f7-b7f0293c63c2",
+  "JSON": "{\"displayName\":\"POL-002 - Block Non-US Access\",\"state\":\"enabledForReportingButNotEnforced\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"],\"excludeGroups\":[\"SG-CA-BreakGlass\",\"SG-CA-Travel-Exception\"]},\"applications\":{\"includeApplications\":[\"All\"]},\"clientAppTypes\":[\"all\"],\"locations\":{\"includeLocations\":[\"All\"],\"excludeLocations\":[\"LOC-USA-Country\"]}},\"grantControls\":{\"operator\":\"OR\",\"builtInControls\":[\"block\"]}}",
+  "SHA": ""
+}
