@@ -1,0 +1,6 @@
+{
+  "PartitionKey": "CATemplate",
+  "RowKey": "04e645e3-cd9e-4923-86cd-760d2cf3ecf0",
+  "GUID": "04e645e3-cd9e-4923-86cd-760d2cf3ecf0",
+  "JSON": "{\"state\":\"enabledForReportingButNotEnforced\",\"displayName\":\"POL-201 - Mobile Devices - Employees\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"],\"excludeGroups\":[\"SG-CA-BreakGlass\"]},\"applications\":{\"includeApplications\":[\"Office365\"]},\"clientAppTypes\":[\"all\"],\"platforms\":{\"includePlatforms\":[\"iOS\",\"android\"]}},\"grantControls\":{\"operator\":\"AND\",\"builtInControls\":[\"compliantApplication\"]}}"
+}
