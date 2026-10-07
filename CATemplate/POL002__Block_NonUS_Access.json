@@ -1,9 +1,0 @@
-{
-  "PartitionKey": "CATemplate",
-  "RowKey": "1ba2479a-d8ca-4c67-91af-d3220e9b296f",
-  "ContentHash": "a0953bc66fb6e0b1b19f0018f9031688e5957451aeaec12ca030b1ff86c3d369",
-  "GUID": "1ba2479a-d8ca-4c67-91af-d3220e9b296f",
-  "JSON": "{\"displayName\":\"POL-002 - Block Non-US Access\",\"state\":\"enabledForReportingButNotEnforced\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"],\"excludeGroups\":[\"SG-CA-BreakGlass\",\"SG-CA-Travel-Exception\"]},\"applications\":{\"includeApplications\":[\"All\"]},\"clientAppTypes\":[\"all\"],\"locations\":{\"includeLocations\":[\"All\"],\"excludeLocations\":[\"LOC-USA-Country\"]}},\"grantControls\":{\"operator\":\"OR\",\"builtInControls\":[\"block\"]},\"LocationInfo\":[{\"@odata.type\":\"#microsoft.graph.countryNamedLocation\",\"displayName\":\"LOC - USA - Country\",\"countriesAndRegions\":[\"US\"],\"includeUnknownCountriesAndRegions\":false,\"countryLookupMethod\":\"clientIpAddress\"}]}",
-  "SHA": "",
-  "SourcePath": "CATemplate/POL002__Block_NonUS_Access.json"
-}
