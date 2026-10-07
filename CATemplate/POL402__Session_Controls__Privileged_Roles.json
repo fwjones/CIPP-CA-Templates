@@ -1,0 +1,7 @@
+{
+  "PartitionKey": "CATemplate",
+  "RowKey": "d510cd9d-0a40-4ea0-a333-b7b565be7f0f",
+  "GUID": "d510cd9d-0a40-4ea0-a333-b7b565be7f0f",
+  "JSON": "{\"displayName\":\"POL-402 - Session Controls - Privileged Roles\",\"state\":\"enabledForReportingButNotEnforced\",\"conditions\":{\"users\":{\"excludeUsers\":[\"SG-CA-BreakGlass\"],\"includeRoles\":[\"9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3\",\"b1be1c3e-b65d-4f19-8427-f6fa0d97feb9\",\"62e90394-69f5-4237-9190-012177145e10\",\"7be44c8a-adaf-4e2a-84d6-ab2649e08a13\",\"158c047a-c907-4556-b7ef-446551a6b5f7\",\"194ae4cb-b126-40b2-bd5b-6091b380977d\",\"29232cdf-9323-42fd-ade2-1d097af3e4de\",\"f28a1f50-f6e7-4571-818b-6a12f2af6b6c\",\"3a2c62db-5318-420d-8d74-23affee5d9d5\",\"c4e39bd9-1100-46d3-8c65-fb160da0071f\",\"e8611ab8-c189-46e8-94e1-60213ab1f814\",\"729827e3-9c14-49f7-bb1b-9608f156bbb8\",\"fe930be7-5e62-47db-91af-98c3a49a38b1\",\"7698a772-787b-4ac8-901f-60d6b08affd2\"]},\"clientAppTypes\":[\"all\"]},\"sessionControls\":{\"signInFrequency\":{\"isEnabled\":true,\"frequencyInterval\":\"timeBased\",\"value\":4,\"type\":\"hours\"}}}",
+  "SHA": ""
+}
