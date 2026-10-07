@@ -1,0 +1,6 @@
+{
+  "PartitionKey": "CATemplate",
+  "RowKey": "7e9bd47b-185c-4b89-8cc4-2f4acf0d77e7",
+  "GUID": "7e9bd47b-185c-4b89-8cc4-2f4acf0d77e7",
+  "JSON": "{\"state\":\"enabledForReportingButNotEnforced\",\"displayName\":\"POL-302 - Sign-In Risk - High\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"],\"excludeGroups\":[\"SG-CA-BreakGlass\"]},\"clientAppTypes\":[\"all\"],\"signInRiskLevels\":[\"high\"]},\"grantControls\":{\"operator\":\"AND\",\"builtInControls\":[\"block\"]}}"
+}
