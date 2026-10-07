@@ -1,0 +1,6 @@
+{
+  "PartitionKey": "CATemplate",
+  "RowKey": "a18fa117-e1f7-4842-bc61-888a999a6ba7",
+  "GUID": "a18fa117-e1f7-4842-bc61-888a999a6ba7",
+  "JSON": "{\"state\":\"enabledForReportingButNotEnforced\",\"displayName\":\"POL-401 - Session Controls - Standard Employees\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"],\"excludeUsers\":[\"SG-CA-BreakGlass\"]},\"clientAppTypes\":[\"all\"]},\"sessionControls\":{\"signInFrequency\":{\"isEnabled\":true,\"frequencyInterval\":\"timeBased\",\"value\":1,\"type\":\"days\"}}}"
+}
