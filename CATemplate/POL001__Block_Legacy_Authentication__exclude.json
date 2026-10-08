@@ -1,7 +1,0 @@
-{
-  "PartitionKey": "CATemplate",
-  "RowKey": "66963704-5431-45f2-b0aa-7d84813117a3",
-  "GUID": "66963704-5431-45f2-b0aa-7d84813117a3",
-  "JSON": "{\"displayName\":\"POL-001 - Block Legacy Authentication - exclude\",\"state\":\"enabled\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"],\"excludeGroups\":[\"SG-CA-BreakGlass\"],\"excludeGuestsOrExternalUsers\":{\"guestOrExternalUserTypes\":\"serviceProvider\",\"externalTenants\":{\"members\":[\"1d551e8f-1a1f-43cf-9f0f-a63254e7498b\"],\"@odata.type\":\"#microsoft.graph.conditionalAccessEnumeratedExternalTenants\",\"membershipKind\":\"enumerated\"}}},\"applications\":{\"includeApplications\":[\"All\"]},\"clientAppTypes\":[\"exchangeActiveSync\",\"other\"]},\"grantControls\":{\"operator\":\"AND\",\"builtInControls\":[\"block\"]}}",
-  "SHA": ""
-}
