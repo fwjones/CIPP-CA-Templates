@@ -1,6 +1,0 @@
-{
-  "PartitionKey": "CATemplate",
-  "RowKey": "a50dcf2d-b122-4fd8-a6e3-fe75f681d17f",
-  "GUID": "a50dcf2d-b122-4fd8-a6e3-fe75f681d17f",
-  "JSON": "{\"state\":\"enabledForReportingButNotEnforced\",\"displayName\":\"POL-301 - Sign-In Risk - Medium\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"],\"excludeGroups\":[\"SG-CA-BreakGlass\"]},\"clientAppTypes\":[\"all\"],\"signInRiskLevels\":[\"medium\"]},\"grantControls\":{\"operator\":\"AND\",\"builtInControls\":[\"mfa\"]}}"
-}

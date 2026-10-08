@@ -1,6 +1,0 @@
-{
-  "PartitionKey": "CATemplate",
-  "RowKey": "46f2bebb-b37c-4370-8b41-8492f63e6c92",
-  "GUID": "46f2bebb-b37c-4370-8b41-8492f63e6c92",
-  "JSON": "{\"state\":\"enabledForReportingButNotEnforced\",\"displayName\":\"POL-303 - User Risk - High\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"],\"excludeGroups\":[\"SG-CA-BreakGlass\"]},\"applications\":{\"includeApplications\":[\"All\"]},\"clientAppTypes\":[\"all\"],\"userRiskLevels\":[\"high\"]},\"grantControls\":{\"operator\":\"AND\",\"builtInControls\":[\"mfa\",\"passwordChange\"]}}"
-}

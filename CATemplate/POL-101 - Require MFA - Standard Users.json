@@ -1,7 +1,0 @@
-{
-  "PartitionKey": "CATemplate",
-  "RowKey": "ce4f83ac-0557-47e4-b59d-273d0634d72d",
-  "GUID": "ce4f83ac-0557-47e4-b59d-273d0634d72d",
-  "JSON": "{\"displayName\":\"POL-101 - Require MFA - Standard Users\",\"state\":\"enabledForReportingButNotEnforced\",\"conditions\":{\"users\":{\"includeUsers\":[\"All\"],\"excludeGroups\":[\"SG-CA-BreakGlass\",\"SG-CA-ResourceAccounts\"]},\"applications\":{\"includeApplications\":[\"All\"]},\"clientAppTypes\":[\"all\"],\"locations\":{\"includeLocations\":[\"All\"]}},\"grantControls\":{\"operator\":\"AND\",\"builtInControls\":[\"mfa\"]}}",
-  "SHA": ""
-}
